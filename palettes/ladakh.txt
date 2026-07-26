@@ -1,0 +1,13 @@
+# Ladakh hypsometric palette — cold high desert ("moonland"): muted sandy tan
+# valleys -> greyish tan-brown mountain flanks -> cream peaks (snow above line).
+# Deliberately low-saturation/sandy (not orange). One #RRGGBB per line, low->high.
+#BBAA85
+#C6B692
+#C2AF82
+#BEA66E
+#AA8B5C
+#927A5B
+#AF9A74
+#CFC3A0
+#E6DCC6
+#F3EEE2

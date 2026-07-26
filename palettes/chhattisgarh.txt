@@ -1,0 +1,44 @@
+# Chhattisgarh hypsometric palette
+#
+# NOTE ON FORMAT: relief.py accepts a stop only if the WHOLE line is a bare
+# #RRGGBB (re.fullmatch), so annotations must live on their own comment lines --
+# an inline "#A1B06D  # 51 m" is silently dropped and the state falls back to the
+# default palette. Keep the hex lines bare.
+#
+# Built against the MEASURED hypsometry, not by eye: ~77% of the state sits
+# between 200 and 700 m (modal band 300-400 m) and only 2% is above 800 m. These
+# stops are read through BL_COLORGAMMA=0.8, which spreads s1..s5 over 1.2%..85%
+# of the surface instead of stacking four colours onto the top 2.6%.
+#
+# Ecology, low -> high: the Sabari/Indravati lowland and the Chhattisgarh rice
+# bowl read as warm paddy yellow-green; the sal forests of the Bastar plateau and
+# Jashpur deepen to a dark forest trough over Abujhmarh and the Maikal range;
+# laterite is then exposed on the plateau edges (olive), warming through the
+# Mainpat/Pendra ochre to a warm TAN -- not snow-white -- on Gaurlata and
+# Bailadila, which top out at ~1265 m in the tropics.
+#
+# Greens stay in the series' yellow-green family (hue 93-108, sat 0.28-0.31), in
+# line with Jharkhand / Manipur / Kerala.
+#
+# stop  gamma-corrected elev   H    S     L     terrain
+#  s0        51 m             76  0.30  0.520  Sabari/Indravati valley floor
+#  s1       129 m             79  0.31  0.555  low plain
+#  s2       236 m             85  0.30  0.585  Chhattisgarh rice bowl (lightest)
+#  s3       358 m             92  0.30  0.500  modal plain / sal fringe
+#  s4       492 m            100  0.31  0.410  Bastar plateau rim
+#  s5       633 m            108  0.33  0.300  Abujhmarh / Maikal sal forest (dark trough)
+#  s6       782 m             66  0.30  0.420  plateau edge, exposed laterite
+#  s7       938 m             45  0.33  0.495  Mainpat / Pendra lateritic ochre
+#  s8      1099 m             34  0.35  0.575  high plateau shoulders
+#  s9      1265 m             30  0.36  0.675  Gaurlata / Bailadila summits, warm tan
+#
+#96A960
+#9AB16A
+#9AB575
+#7DA659
+#5E8948
+#3D6633
+#858B4B
+#A89355
+#B9986D
+#CAAC8E

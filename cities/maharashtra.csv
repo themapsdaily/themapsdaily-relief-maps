@@ -1,0 +1,19 @@
+name,lat,long,capital,side
+Mumbai,19.0760,72.8777,1,left
+Nagpur,21.1458,79.0882,1,right
+Thane,19.2183,72.9781,0,right
+Pune,18.5204,73.8567,0,right
+Nashik,19.9975,73.7898,0,right
+Chhatrapati Sambhajinagar,19.8762,75.3433,0,right
+Jalgaon,21.0077,75.5626,0,right
+Amravati,20.9374,77.7796,0,right
+Yavatmal,20.3888,78.1204,0,right
+Nanded,19.1383,77.3210,0,right
+Latur,18.4088,76.5604,0,right
+Solapur,17.6599,75.9064,0,right
+Kolhapur,16.7050,74.2433,0,right
+Chandrapur,19.9615,79.2961,0,right
+Gadchiroli,20.1809,80.0033,0,left
+Alibag,18.6411,72.8722,0,left
+Ratnagiri,16.9902,73.3120,0,left
+Malvan,16.0594,73.4629,0,left

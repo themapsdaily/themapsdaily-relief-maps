@@ -1,0 +1,27 @@
+# Jammu & Kashmir hypsometric palette. Unlike Himachal, J&K has no Trans-
+# Himalayan cold desert (Spiti/Lahaul sit in HP; Zanskar/Changthang in Ladakh),
+# so this ramp stays GREEN much longer before turning to barren stone.
+#
+# With DEM_CLAMP_LO the range is ~242-7071 m, so the 10 stops land at roughly:
+#   242 m  Jammu plains, subtropical and agricultural
+#  1001 m  Shivalik / outer hills forest
+#  1759 m  the Kashmir Valley floor (~1585 m) -- the lush signature bowl
+#  2518 m  deodar and conifer belt (Gulmarg 2712, Pahalgam 2129)
+#  3277 m  alpine meadow, the "margs"
+#  4035 m  above treeline, grass and scree
+#  4794 m  barren rock
+#  5553 m  high barren (mostly under snow anyway)
+#  6312 m  summit scree
+#  7071 m  near-white
+# Snow (white) is blended on top above BL_SNOWLINE. Filmic, not neon.
+# One #RRGGBB per line, low elevation -> high elevation.
+#5E9C63
+#6BA25E
+#79A65C
+#8EAA5F
+#A2A768
+#B4A06E
+#B69675
+#B69986
+#C6B7A5
+#DAD2C5

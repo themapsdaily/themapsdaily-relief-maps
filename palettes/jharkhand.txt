@@ -1,0 +1,15 @@
+# Jharkhand hypsometric palette — Chotanagpur plateau: deep sal/teak forest
+# greens at low & mid elevations, warm lateritic ochre on exposed uplands and
+# plateau edges, warm tan (NOT snow-white) at Parasnath summit (~1,350m).
+# Slightly desaturated / filmic — reads as "green plateau of India", not neon.
+# One #RRGGBB per line, low elevation -> high elevation.
+#A8AC6A
+#7E9C5A
+#5D8A4C
+#4C7A42
+#3F6B38
+#5A7642
+#7D7644
+#987048
+#B08858
+#C29B73

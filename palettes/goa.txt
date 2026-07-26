@@ -1,0 +1,20 @@
+# Goa hypsometric palette — a small tropical coastal state.
+# NOTE: the sandy shore is NO LONGER the bottom palette stop — beaches get their
+# own flat golden-sand layer (`<slug>_beach.png` + BL_BEACH), so this ramp is
+# pure LAND: the lush Konkan coastal plain (paddy, coconut, cashew) at the
+# bottom, rising through the forested lower Western Ghats (Sahyadri) deep green,
+# up to the warm red-laterite tablelands and Ghat crests (Goa tops out ~1020 m
+# and stays forested, so the crests are olive/laterite, never bare rock).
+# Used with BL_COLORGAMMA<1, which lifts the very low ground into the greens.
+# No snow. Filmic / slightly desaturated to match the series, NOT neon.
+# One #RRGGBB per line, low elevation -> high elevation.
+#C3CE93
+#A9C27E
+#91B76E
+#7CAC62
+#69A159
+#5B9550
+#668C4B
+#85874E
+#A2854F
+#BF9E63

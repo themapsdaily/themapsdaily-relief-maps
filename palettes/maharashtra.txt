@@ -1,0 +1,35 @@
+# Maharashtra hypsometric palette — a big PLATEAU state with a coast, so its
+# hypsometry is unlike any state done so far: ~80% of the surface sits between
+# 200 and 700 m (the Deccan basalt plateau) and only ~0.4% is above 1000 m (the
+# Sahyadri crestline). Stops are therefore tuned to the measured DEM histogram,
+# not spread evenly by eye — otherwise the top three stops paint 0.2% of the map
+# and the plateau reads as one flat green mass.
+#
+# Range after despiking is ~0-1539 m (z9), so the 10 stops land at ~171 m each:
+#     0 m  Konkan coastal plain + the Wainganga/Wardha valleys of E Vidarbha
+#   171 m  Konkan midland, teak lowland                      ] the wet, green
+#   342 m  forested eastern Vidarbha (Gadchiroli/Chandrapur) ] DARK TROUGH
+#   513 m  plateau edge
+#   684 m  the modal Deccan plateau — semi-arid Desh/Marathwada rain shadow,
+#          so this band turns OLIVE rather than continuing green
+#   855 m  upper plateau / Ghat shoulder
+#  1026 m  Ghat crest
+#  1197 m  high Sahyadri basalt
+#  1368 m  summit tablelands (Mahabaleshwar-type grass plateaus)
+#  1539 m  the highest crests (Kalsubai 1646 m, Salher 1567 m — both truncated
+#          to ~1500 m by the z9 grid, which is why the top stop is reached)
+#
+# Greens stay in the SERIES family (hue 88-100, sat 0.25-0.30) — same yellow-green
+# as Manipur/Goa/Jharkhand/Kerala, NOT an emerald. Warm stops are basalt ochre
+# and dry-season grass gold, never rock-grey and never snow (BL_SNOWLINE=1.1).
+# One #RRGGBB per line, low elevation -> high elevation.
+#8FB270
+#79A659
+#5E8849
+#728E52
+#89965A
+#9D955C
+#AA8F5A
+#B38956
+#C19D67
+#D2B684

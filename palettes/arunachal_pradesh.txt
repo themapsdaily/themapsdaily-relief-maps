@@ -1,0 +1,44 @@
+# Arunachal Pradesh hypsometric palette — the wettest, most densely forested
+# state in the Himalaya (~79% forest cover, the highest share of any large
+# Indian state). Its elevation range (107-6996 m after DEM_CLAMP_LO) is almost
+# identical to Jammu & Kashmir's (242-7071 m), so J&K's ramp maps ~1:1 by
+# elevation — but the ECOLOGY is the opposite. J&K turns barren stone early
+# because the Pir Panjal throws a rain shadow over Zanskar/Ladakh; Arunachal
+# takes the full force of the Bay of Bengal monsoon, so forest climbs to
+# ~3,500-4,000 m and there is no cold desert at all. This ramp therefore holds
+# GREEN much longer and much DEEPER than J&K's, and only turns to stone in the
+# top three stops (which sit under snow anyway).
+#
+# The 10 stops land at roughly:
+#    107 m  Brahmaputra alluvial fringe — Namsai, Pasighat, the Assam border
+#    872 m  subtropical broadleaf / bamboo foothills (Itanagar 640, Khonsa 800)
+#   1638 m  dense tropical + subtropical evergreen — the signature forest belt
+#   2403 m  temperate broadleaf, oak and rhododendron (the darkest trough)
+#   3169 m  upper temperate conifer, hemlock and fir (Tawang 3048)
+#   3934 m  treeline, dwarf rhododendron and alpine scrub
+#   4700 m  alpine meadow and grass above the treeline (~BL_SNOWLINE)
+#   5465 m  barren rock and scree
+#   6231 m  summit scree (mostly under permanent snow)
+#   6996 m  near-white (Kangto massif; true summit 7,060 m)
+#
+# The ramp ROTATES HUE continuously (95 -> 105 -> 98 -> 82 -> 62 -> 45 -> 33)
+# the way Himachal's and J&K's do. A first draft held hue ~100 flat across the
+# five green stops; because ~80% of Arunachal lies below 3,300 m that painted
+# the whole state one shade (100% of terrain green, hue p10-p90 only 86-111,
+# against Himachal's 32-117) and it read as a flat slab. Holding green through
+# s3 (~2,400 m) but turning olive at s4 gives the alpine zone its own tone.
+# Snow (white) is blended on top above BL_SNOWLINE. Greens sit at hue 95-105,
+# inside the series' yellow-green family (Manipur/Goa/Jharkhand/Kerala ~95-108);
+# an emerald hue ~138 reads "artificial" next to the other states. Filmic and
+# desaturated, not neon.
+# One #RRGGBB per line, low elevation -> high elevation.
+#86B266
+#6DA451
+#599047
+#597E44
+#6D824A
+#8F9155
+#A69564
+#B19B81
+#C2B2A3
+#DAD3C8

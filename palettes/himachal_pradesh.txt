@@ -1,0 +1,17 @@
+# Himachal Pradesh hypsometric palette — a Himalayan state spanning lush green
+# to cold high-desert. Low ground = the deodar/pine forested Kangra, Mandi and
+# Shimla hills (green); rising through oak/alpine meadow olive; then the barren
+# grey-brown Trans-Himalayan rock of Kinnaur, Spiti and Lahaul (which sit high,
+# so they map to the upper stops); pale scree just under the perpetual snow.
+# Snow (white) is blended on top above BL_SNOWLINE. Filmic, not neon.
+# One #RRGGBB per line, low elevation -> high elevation.
+#5E9C63
+#6FA35C
+#7FA457
+#94A65A
+#A8A566
+#B7A06C
+#B89873
+#B59A85
+#C3B4A2
+#D8D0C2

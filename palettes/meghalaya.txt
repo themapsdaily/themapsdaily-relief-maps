@@ -1,0 +1,32 @@
+# Meghalaya hypsometric palette — "the abode of clouds", the wettest state on
+# earth (Mawsynram / Sohra). Built against the MEASURED z11 hypsometry, which is
+# unusually EVEN for this series (12.5% under 100 m, ~5% per 100 m band through
+# the middle, 4.9% above 1600 m) — so evenly spaced stops all earn their pixels
+# and no BL_COLORGAMMA correction is needed. Stop elevations (12 m floor,
+# 1964 m max) are noted per line.
+#
+# The arc is a LUSHNESS arc, not a simple green->rock ramp:
+#   - the border lowlands (Bangladesh plain south, Brahmaputra fringe north) are
+#     bright wet paddy green;
+#   - it DARKENS into the 700-1100 m belt, which catches the monsoon head-on —
+#     tropical evergreen forest and the Khasi sacred groves. This is the darkest,
+#     richest green in the series, and it is the point of the map;
+#   - above that the Khasi/Jaintia plateau surface opens into Khasi pine and
+#     rolling GRASSLAND, so it LIGHTENS back through olive to tawny gold at
+#     Shillong Peak — real high-plateau grass, not rock and not snow.
+#     (Same treatment as Kerala's Munnar shola-grassland high ranges.)
+#
+# Stays in the series YELLOW-green family (greens hue ~88-110, sat 0.27-0.34) —
+# an emerald/blue-green drift reads as "artificial" next to the other states.
+# NO snow (BL_SNOWLINE=1.1): the 1965 m high point is grass, not ice.
+# One #RRGGBB per line, low elevation -> high elevation.
+#98B971
+#77A855
+#608D49
+#4E783F
+#3E6536
+#4B6A3C
+#637946
+#878F4F
+#ACA45B
+#C3AF79

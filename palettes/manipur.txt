@@ -1,0 +1,17 @@
+# Manipur hypsometric palette — lush NE-hills evergreen state. A fresh paddy-green
+# Imphal valley floor (~780 m, lands ~0.26 of range) rising through dense
+# subtropical forest greens on the encircling Purvanchal ranges, shifting to
+# olive/khaki on the upper hills and warm ochre/tan only on the highest exposed
+# ridges (~3,000 m). NO snow (BL_SNOWLINE=1.1) — these peaks are forested.
+# Filmic and desaturated, reads as "green hill state", not neon grass.
+# One #RRGGBB per line, low elevation -> high elevation.
+#9DBE7A
+#7FAA5F
+#6C9C50
+#5E9048
+#557F43
+#5E7A44
+#77794A
+#907C4F
+#A88F5E
+#C2A878

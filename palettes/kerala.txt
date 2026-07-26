@@ -1,0 +1,26 @@
+# Kerala hypsometric palette — a lush tropical coastal state ("God's Own Country").
+# Beaches get their own flat golden-sand layer (_beach.png + BL_BEACH), so this
+# ramp is pure LAND, low -> high elevation.
+#
+# IMPORTANT — stay in the SERIES green family. Every other state (Manipur, Goa,
+# Jharkhand, Himachal) uses a YELLOW-green (hue ~95-108), the natural
+# sage/vegetation green. An earlier Kerala draft drifted to a blue-green /
+# emerald (hue ~138) which read as "artificial" next to the others. These stops
+# are back in the family: hue ~99-107 for the greens, muted saturation, wide
+# light spread so the map still has depth:
+#   - wet coastal plain + midland (paddy, coconut, rubber) = light natural green;
+#   - tropical evergreen Western Ghats (Sahyadri) forest = the darkest green mid;
+#   - HIGH RANGES (Munnar / Eravikulam / Anamudi ~1900-2680 m) = rolling montane
+#     GRASSLAND, olive -> tawny -> gold (real shola-grassland, NOT rock/snow).
+# Used with BL_COLORGAMMA<1 to lift the broad low plain into the greens. No snow.
+# One #RRGGBB per line, low elevation -> high elevation.
+#82B069
+#6EA654
+#5D9447
+#4F843E
+#457737
+#4E7439
+#6C8443
+#969E4C
+#BAAD5A
+#CAB472

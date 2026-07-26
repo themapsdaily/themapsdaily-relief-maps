@@ -1,0 +1,20 @@
+# Everything under output/ is reproducible from render_state.R (rayshader) or
+# blender/render_state.sh (Blender/Cycles). It is ~2.6 GB of DEM tiles, render
+# intermediates and hero PNGs — archived to R2, never to git.
+output/
+
+# Raster + render intermediates, wherever they land
+*.tif
+*.tiff
+*.blend1
+Rplots.pdf
+
+# R / Python local state
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
