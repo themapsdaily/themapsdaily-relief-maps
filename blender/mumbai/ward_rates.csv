@@ -1,0 +1,25 @@
+ward,area,rate_avg_inr,rate_peak_inr
+A,Colaba–Fort–Churchgate,65000,120000
+B,Sandhurst Road,30000,42000
+C,Marine Lines–Kalbadevi,38000,55000
+D,Malabar Hill–Tardeo,90000,160000
+E,Byculla–Mazgaon,33000,50000
+F/S,Parel–Lower Parel,55000,90000
+F/N,Matunga–Sion–Wadala,37000,50000
+G/S,Worli–Prabhadevi,78000,120000
+G/N,Dadar–Mahim–Dharavi,42000,58000
+H/W,Bandra West–Santacruz West,55000,80000
+H/E,Bandra East–Santacruz East,40000,55000
+K/W,Andheri West–Juhu–Versova,45000,70000
+K/E,Andheri East–Vile Parle East,30000,42000
+L,Kurla–Saki Naka,22000,30000
+M/E,Govandi–Mankhurd,15000,22000
+M/W,Chembur,28000,38000
+N,Ghatkopar–Vikhroli,27000,38000
+P/S,Goregaon,28000,40000
+P/N,Malad,26000,38000
+R/S,Kandivali,24000,32000
+R/C,Borivali,25000,34000
+R/N,Dahisar,19000,26000
+S,Bhandup–Powai,27000,42000
+T,Mulund,25000,34000

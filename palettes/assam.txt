@@ -1,0 +1,26 @@
+# Assam hypsometric palette — the Brahmaputra state. ~80% of Assam is the vast,
+# near-flat Brahmaputra valley (and the smaller Barak valley in the south) at
+# ~40-90 m: wet paddy, tea gardens and wetland — so the DOMINANT colour is a
+# bright, wet lowland green, brighter than the Imphal-valley base of Manipur
+# (which sits at ~780 m). From that valley floor the land climbs only on the
+# fringes — the Karbi Anglong plateau and the North Cachar / Barail hills in the
+# south-centre — through dense subtropical evergreen forest (the darkest, richest
+# green, ~600-1200 m), then olive and khaki on the upper hills, to tan/gold on
+# the highest Barail ridges (~1960 m). There is NO snow (BL_SNOWLINE=1.1): the
+# high point is forest-and-grass, not ice.
+#
+# Held in the series' YELLOW-green family (greens hue ~90-110, sat ~0.28-0.34) so
+# it sits beside Manipur, Meghalaya, Kerala and Goa; an emerald/blue-green drift
+# reads as "artificial". Because the state is so bottom-heavy, tune the spread
+# with BL_COLORGAMMA against the MEASURED hypsometry rather than eyeballing.
+# One #RRGGBB per line, low elevation -> high elevation.
+#A6C77C
+#86B462
+#6FA451
+#5E9448
+#55813F
+#5C7B44
+#76794A
+#90804F
+#A98F5E
+#C4A97A
