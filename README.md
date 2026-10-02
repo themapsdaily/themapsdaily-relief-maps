@@ -78,11 +78,17 @@ RELIEF_AO=0 RELIEF_OUT_W=540 RELIEF_OUT_H=960 Rscript render_state.R "Uttarakhan
 
 ## Boundaries
 
-Clips to `data/boundaries/india-2021.geojson` (36 states/UTs, post-2019 lines,
-state name in `st_nm`). No disputed-line issue. This is a vendored copy of the
-website's own official map — `themapsdaily-web/public/maps/india-2021.geojson`.
-It is duplicated here on purpose so this repo renders standalone; if the site
-ever redraws its boundaries, re-copy it.
+Clips to `data/boundaries/india-2021.geojson` (36 states/UTs, post-2020 lines,
+state name in `st_nm`). Outer line is India's claimed boundary (PoK, Gilgit-
+Baltistan, Aksai Chin, Shaksgam, Sir Creek inside) — see
+`themapsdaily-web/docs/INDIA_MAPS.md`. This is a vendored copy of the
+website's `themapsdaily-web/public/maps/india-2021.geojson` (identical to
+`india-2020` apart from the name). It is duplicated here on purpose so this repo
+renders standalone; if the site ever redraws its boundaries, re-copy it.
+
+**District master:** `data/boundaries/india-districts-2022.geojson` (770
+districts) and `india-states-2022.geojson` (states dissolved from it, sharing
+every vertex) are built by `maps/build_district_maps.py`; see `maps/README.md`.
 
 Override per run without editing any script:
 
