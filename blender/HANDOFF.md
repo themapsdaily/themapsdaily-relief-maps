@@ -56,7 +56,7 @@ Env knobs to expose: `BL_EXAG`(~1.6), `BL_TILT`(0=top-down), `BL_SAMPLES`(128), 
 - **Granularity needs a fine DEM:** current cache is **z10 (~130 m/px — too coarse)**. Start there to get the pipeline working, then re-export **z11/z12** (`Rscript blender/export_dem.R "Uttarakhand" 12`) for real detail. z12 ≈ SRTM-native ~30 m (big fetch).
 - **Vertical exaggeration** = user wants dramatic mountains (rayshader used exag 6). Tune `BL_EXAG`.
 - **Cities:** `cities/<slug>.csv` (name,lat,long,capital), Dehradun=capital. Labels can be composited in post (magick) using lat/long→pixel on meta extent (like render_state.R step 7), OR added as Blender text. Defer until look is locked.
-- **Boundaries:** `public/maps/india-2021.geojson`, field `st_nm` (official post-2019 lines).
+- **Boundaries:** `public/maps/india-2021.geojson`, field `st_nm` (current post-2020 lines, India's claimed outer boundary).
 - User = themapsdaily IG. Wants 4:5 or transparent output. Verify with pixels, don't oversell.
 
 ## First steps for you
