@@ -46,7 +46,7 @@ STATE_REF = MAPS / "india-2021.geojson"
 PRECISION = "0.00001"  # ~1 m
 REGION_IDS = Path(__file__).with_name("region_ids.txt")  # Directus region_id snapshot
 # Source of truth for dt_id / dt_nm / st_id by year (sibling repo).
-DISTRICT_VALIDITY = ROOT.parent / "themapsdaily-data" / "sources" / "_shared" / "districts" / "district_validity.csv"
+DISTRICT_VALIDITY = ROOT.parent / "themapsdaily-data" / "regions" / "district" / "district_validity.csv"
 
 # Name-derived dt_id -> district_validity dt_id for VINTAGE. Spelling variants
 # (Banaskantha / Banas Kantha), official renames already in force by 2022

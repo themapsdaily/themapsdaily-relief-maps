@@ -51,7 +51,7 @@ same way `orissa` → `odisha` is a new `region_id`. This 2022 vintage already h
 names that changed in 2023 (Aurangabad → Chhatrapati Sambhajinagar, Osmanabad →
 Dharashiv).
 
-**Keys follow `themapsdaily-data/sources/_shared/districts/district_validity.csv`**
+**Keys follow `themapsdaily-data/regions/district/district_validity.csv`**
 (2011–2026, Census 2011 + dated events, checked against IGOD), the source of
 truth for `dt_id`, names and years. The build reads it from the sibling checkout
 and fails without it:
