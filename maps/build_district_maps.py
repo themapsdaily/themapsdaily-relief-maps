@@ -103,6 +103,7 @@ DT_ID_FIX = {
     # Telangana
     "bhadradri-district": "bhadradri-kothagudem-district",
     "hanamkonda-district": "hanumakonda-district",
+    "warangal-district": "warangal-2021-district",  # 2021 reuse of the name (former Warangal Rural); see district_validity
     "jagitial-district": "jagtial-district",
     "jogulamba-district": "jogulamba-gadwal-district",
     "kumuram-bheem-district": "kumuram-bheem-asifabad-district",
