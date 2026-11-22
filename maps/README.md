@@ -1,3 +1,5 @@
+> The source files this pipeline was built from (a district shapefile of unrecorded origin and a set of OpenStreetMap polygons) have been removed from this repository because their licence could not be confirmed. The notes below describe how the district map was built and are kept as a record. The script will not run without your own source files.
+
 # District master map
 
 Built here, not in `themapsdaily-web`, so it is isolated from the site

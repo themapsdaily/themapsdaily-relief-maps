@@ -26,7 +26,7 @@ The image lands in `output/`. A full render takes 8 to 10 minutes. The preview s
 - Terrain: Copernicus DEM through the AWS Terrain Tiles service (via the `elevatr` package).
 - Rivers and lakes: OpenStreetMap contributors, available under the ODbL licence. Keep that credit if you publish a map.
 - Labels use the Inter font, which is open source (SIL Open Font Licence).
-- State outlines: our own cleaned outlines in `data/boundaries/`. They follow India's officially claimed border. The original source of the base polygons was not recorded, so check them before using them for anything official.
+- State outlines: not included. Bring your own boundary file (see Boundaries below). Check its licence and how it draws India's border before you publish a map.
 - Code: MIT licence, see `LICENSE`.
 
 Made by [TheMapsDaily](https://themapsdaily.com). Everything below is the technical detail.
@@ -102,17 +102,7 @@ RELIEF_AO=0 RELIEF_OUT_W=540 RELIEF_OUT_H=960 Rscript render_state.R "Uttarakhan
 
 ## Boundaries
 
-Clips to `data/boundaries/india-2021.geojson` (36 states/UTs, post-2020 lines,
-state name in `st_nm`). Outer line is India's claimed boundary (PoK, Gilgit-
-Baltistan, Aksai Chin, Shaksgam, Sir Creek inside) — see
-`themapsdaily-web/docs/INDIA_MAPS.md`. This is a vendored copy of the
-website's `themapsdaily-web/public/maps/india-2021.geojson` (identical to
-`india-2020` apart from the name). It is duplicated here on purpose so this repo
-renders standalone; if the site ever redraws its boundaries, re-copy it.
-
-**District master:** `data/boundaries/india-districts-2022.geojson` (770
-districts) and `india-states-2022.geojson` (states dissolved from it, sharing
-every vertex) are built by `maps/build_district_maps.py`; see `maps/README.md`.
+This repository does not ship boundary files. The scripts read a GeoJSON of states or union territories with the state name in a column called `st_nm`, from `data/boundaries/india-2021.geojson` by default. Put your file there, or point to it for one run:
 
 Override per run without editing any script:
 
@@ -130,7 +120,7 @@ for the high-detail single-state OSM polygons (Goa's coastline needs it).
 | `render_state.R` | rayshader path — 2D top-down composite, ~8–10 min |
 | `blender/` | Blender/Cycles path — the 3D hero render (see `blender/README.md`) |
 | `blender/<state>/` | one-off per-state fetch/build scripts kept as a record of how that state's water, boundary and peaks were produced — see caveat below |
-| `data/boundaries/` | vendored india-`<year>`.geojson state outlines |
+| `data/boundaries/` | empty on purpose: put your own boundary file here |
 | `cities/<slug>.csv` | curated city labels (`name,lat,long,capital`) |
 | `peaks/<slug>.csv` | marquee peaks (`name,lat,long,elev_m`) — DEM-verified |
 | `features/<slug>.csv` | area labels (ranges, plateaus, valleys) |
