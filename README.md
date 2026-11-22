@@ -11,7 +11,7 @@ Turn any Indian state into a 3D shaded-relief map: tilted terrain, soft shadows,
 - A 1080 by 1920 vertical image with a studio-grey backdrop and a baked-in drop shadow.
 - Colours that follow the height of the land: teal lowlands, then tan, brown ridges and cream peaks.
 - Rivers, cities, capitals and marquee peaks, with labels you control through simple CSV files.
-- A recipe for each state you can re-run: 14 states are already set up in `blender/` and the CSV folders.
+- A recipe for each state you can re-run: 13 states and Mumbai are already set up in `blender/` and the CSV folders.
 
 ## Quick start
 
