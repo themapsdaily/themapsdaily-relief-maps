@@ -21,3 +21,5 @@ __pycache__/
 
 # maps/ Python env (pip install -r maps/requirements.txt)
 .venv/
+citymap/cache/
+citymap/.venv/
