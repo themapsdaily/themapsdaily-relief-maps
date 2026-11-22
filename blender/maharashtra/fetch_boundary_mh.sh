@@ -2,7 +2,7 @@
 # Overpass: Maharashtra admin boundary (admin_level=4). POST + User-Agent (bare GET 406s),
 # cycle mirrors because a big-bbox state 504s on the main endpoint.
 set -u
-OUT=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/maharashtra/mh_boundary.json
+OUT=${RELIEF_MAPS_ROOT:-.}/output/maharashtra/mh_boundary.json
 Q='[out:json][timeout:600];relation["boundary"="administrative"]["admin_level"="4"]["name"="Maharashtra"](15.4,72.4,22.2,81.1);out geom;'
 for URL in https://overpass-api.de/api/interpreter https://overpass.private.coffee/api/interpreter https://overpass.kumi.systems/api/interpreter; do
   echo "=== trying $URL"

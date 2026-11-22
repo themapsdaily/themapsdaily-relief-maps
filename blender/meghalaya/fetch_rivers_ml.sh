@@ -2,7 +2,7 @@
 # Overpass: Meghalaya waterway=river. osmdata 504s on the default endpoint, so go
 # straight to curl and cycle mirrors (the pipeline's standard big-bbox fallback).
 set -u
-OUT=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/meghalaya/ml_rivers.json
+OUT=${RELIEF_MAPS_ROOT:-.}/output/meghalaya/ml_rivers.json
 Q='[out:json][timeout:270];way["waterway"="river"](25.00,89.78,26.15,92.85);out geom;'
 for URL in https://overpass.private.coffee/api/interpreter https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter; do
   echo "=== trying $URL"

@@ -3,7 +3,7 @@
 # report each cluster's summit, so peak labels are attributed to measured
 # terrain instead of to published coordinates of uncertain provenance.
 suppressPackageStartupMessages({library(terra)})
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 d  <- terra::rast("output/chhattisgarh/chhattisgarh_dem_z10.tif")
 TH <- as.numeric(Sys.getenv("TH", "1050"))
 hi <- terra::ifel(d >= TH, 1, NA)

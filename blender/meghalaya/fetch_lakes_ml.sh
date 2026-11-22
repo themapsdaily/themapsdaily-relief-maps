@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Overpass: Meghalaya water bodies. osmdata hangs/504s here (same as rivers), so curl + mirrors.
 set -u
-OUT=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/meghalaya/ml_lakes.json
+OUT=${RELIEF_MAPS_ROOT:-.}/output/meghalaya/ml_lakes.json
 Q='[out:json][timeout:270];(way["natural"="water"](25.00,89.78,26.15,92.85);relation["natural"="water"](25.00,89.78,26.15,92.85););out geom;'
 for URL in https://overpass-api.de/api/interpreter https://overpass.private.coffee/api/interpreter https://overpass.kumi.systems/api/interpreter; do
   echo "=== trying $URL"

@@ -2,7 +2,7 @@
 # Overpass: Chhattisgarh waterway=river. 26 deg^2 bbox -- osmdata hangs, so curl
 # + mirror cycling (the pipeline's standard big-bbox fallback).
 set -u
-OUT=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/chhattisgarh/cg_rivers.json
+OUT=${RELIEF_MAPS_ROOT:-.}/output/chhattisgarh/cg_rivers.json
 Q='[out:json][timeout:600];way["waterway"="river"](17.7,80.1,24.2,84.5);out geom;'
 for URL in https://overpass.private.coffee/api/interpreter https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter; do
   echo "=== trying $URL"

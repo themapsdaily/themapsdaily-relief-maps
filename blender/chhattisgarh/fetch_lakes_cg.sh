@@ -11,7 +11,7 @@
 #     still writes a file, so a tile *count* looks complete while the content is
 #     a 26 MB HTML error page.
 set -u
-DIR=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/chhattisgarh/lake_tiles
+DIR=${RELIEF_MAPS_ROOT:-.}/output/chhattisgarh/lake_tiles
 mkdir -p "$DIR"
 MIRRORS=(https://overpass-api.de/api/interpreter https://overpass.private.coffee/api/interpreter https://overpass.kumi.systems/api/interpreter)
 # 3 rows x 2 cols over (17.7,80.1)-(24.2,84.5), with a small overlap

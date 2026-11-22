@@ -7,7 +7,7 @@ suppressPackageStartupMessages({library(sf); library(jsonlite)})
 sf::sf_use_s2(FALSE)   # OSM water rings self-intersect
 LAEA <- "+proj=laea +lat_0=21.0 +lon_0=82.3 +datum=WGS84 +units=m"
 km2  <- function(g) as.numeric(sf::st_area(sf::st_transform(sf::st_geometry(g), LAEA))) / 1e6
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 st <- sf::st_read("output/chhattisgarh/chhattisgarh_boundary.gpkg", quiet = TRUE)
 
 tiles <- sort(Sys.glob("output/chhattisgarh/lake_tiles/tile_*.json"))

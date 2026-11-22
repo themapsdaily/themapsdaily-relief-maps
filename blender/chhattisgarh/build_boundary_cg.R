@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 suppressPackageStartupMessages({library(sf); library(jsonlite)})
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 j <- jsonlite::fromJSON("output/chhattisgarh/cg_boundary.json", simplifyVector = FALSE)
 rel <- Filter(function(e) e$type == "relation", j$elements)[[1]]
 mm <- Filter(function(m) m$type == "way" && !is.null(m$geometry), rel$members)

@@ -4,7 +4,7 @@
 # (Kalsubai drifted 4.1 km). Also reports the state-wide DEM maximum so the
 # palette's top stop can be attributed to a real place.
 suppressPackageStartupMessages({library(terra)})
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 d <- terra::rast("output/chhattisgarh/chhattisgarh_dem_z10.tif")
 
 cat("=== state-wide DEM maximum ===\n")

@@ -4,7 +4,7 @@
 # instead, cycling mirrors per tile, with a pause between tiles so we never
 # hammer one endpoint.
 set -u
-D=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/maharashtra/rivertiles
+D=${RELIEF_MAPS_ROOT:-.}/output/maharashtra/rivertiles
 mkdir -p "$D"
 LATS=(15.4 17.67 19.94 22.2); LONS=(72.4 75.3 78.2 81.1)
 fail=0

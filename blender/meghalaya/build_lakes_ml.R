@@ -5,7 +5,7 @@ suppressPackageStartupMessages({library(sf); library(jsonlite)})
 sf::sf_use_s2(FALSE)   # OSM water rings self-intersect
 LAEA <- "+proj=laea +lat_0=25.6 +lon_0=91.3 +datum=WGS84 +units=m"
 km2 <- function(g) as.numeric(sf::st_area(sf::st_transform(sf::st_geometry(g), LAEA))) / 1e6
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 st <- sf::st_read("output/meghalaya/meghalaya_boundary.gpkg", quiet = TRUE)
 
 j <- jsonlite::fromJSON("output/meghalaya/ml_lakes.json", simplifyVector = FALSE)

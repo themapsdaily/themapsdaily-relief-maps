@@ -3,7 +3,7 @@
 # output/meghalaya/meghalaya_rivers.gpkg (geometry-only is all export_dem.R needs).
 suppressPackageStartupMessages({library(sf); library(jsonlite)})
 sf::sf_use_s2(FALSE)
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 LAEA <- "+proj=laea +lat_0=25.6 +lon_0=91.3 +datum=WGS84 +units=m"
 
 j  <- jsonlite::fromJSON("output/meghalaya/ml_rivers.json", simplifyVector = FALSE)

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -u
-OUT=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/maharashtra/mh_lakes.json
+OUT=${RELIEF_MAPS_ROOT:-.}/output/maharashtra/mh_lakes.json
 # Maharashtra's signature water = big RESERVOIRS (Koyna/Shivsagar, Jayakwadi, Ujani,
 # Isapur, Totladoh, Gosikhurd). A blanket natural=water over an 8.25x6.42 deg bbox
 # would pull every farm pond, so restrict to reservoirs + water RELATIONS (big

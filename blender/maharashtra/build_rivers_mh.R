@@ -1,6 +1,6 @@
 suppressPackageStartupMessages({library(sf)})
 sf::sf_use_s2(FALSE)
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 LAEA <- "+proj=laea +lat_0=19 +lon_0=76.7 +datum=WGS84 +units=m"
 r  <- sf::st_read("output/maharashtra/mh_rivers_merged.geojson", quiet = TRUE)
 st <- sf::st_read("output/maharashtra/maharashtra_boundary.gpkg", quiet = TRUE)

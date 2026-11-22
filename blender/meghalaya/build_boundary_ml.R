@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 suppressPackageStartupMessages({library(sf); library(jsonlite)})
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 j <- jsonlite::fromJSON("output/meghalaya/ml_boundary.json", simplifyVector = FALSE)
 rel <- Filter(function(e) e$type == "relation", j$elements)[[1]]
 cat(sprintf("relation id: %s  name: %s\n", rel$id, rel$tags$name))

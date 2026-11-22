@@ -5,7 +5,7 @@ suppressPackageStartupMessages({library(sf)})
 sf::sf_use_s2(FALSE)
 LAEA <- "+proj=laea +lat_0=19 +lon_0=76.7 +datum=WGS84 +units=m"
 km2 <- function(g) as.numeric(sf::st_area(sf::st_transform(sf::st_geometry(g), LAEA))) / 1e6
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 st <- sf::st_read("output/maharashtra/maharashtra_boundary.gpkg", quiet = TRUE)
 
 w  <- sf::st_read("output/maharashtra/mh_water_ways.geojson", quiet = TRUE)

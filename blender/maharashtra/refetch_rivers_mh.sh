@@ -3,7 +3,7 @@
 # Split each into quarters -- a smaller bbox is far likelier to clear Overpass's
 # dispatcher timeout -- and pause generously so we never hammer one endpoint.
 set -u
-D=/Users/siddharthpetare/projects/themapsdaily-relief-maps/output/maharashtra/rivertiles
+D=${RELIEF_MAPS_ROOT:-.}/output/maharashtra/rivertiles
 mkdir -p "$D"
 fetch() { # name S W N E
   local nm=$1 S=$2 W=$3 N=$4 E=$5 f="$D/r_$1.json"

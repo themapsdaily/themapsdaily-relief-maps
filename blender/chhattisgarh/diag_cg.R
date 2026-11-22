@@ -2,7 +2,7 @@
 # Void diagnostics + local-outlier profile + hypsometry for the Chhattisgarh DEM.
 # Decides clamp-vs-despike and gives the palette its measured elevation bands.
 suppressPackageStartupMessages({library(terra)})
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 f <- Sys.getenv("DEMFILE", "output/chhattisgarh/chhattisgarh_dem_z10.tif")
 d <- terra::rast(f)
 v <- terra::values(d, mat = FALSE)

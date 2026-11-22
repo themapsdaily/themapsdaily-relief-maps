@@ -3,7 +3,7 @@
 # output/chhattisgarh/chhattisgarh_rivers.gpkg (geometry-only is all export_dem.R needs).
 suppressPackageStartupMessages({library(sf); library(jsonlite)})
 sf::sf_use_s2(FALSE)
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 LAEA <- "+proj=laea +lat_0=21.0 +lon_0=82.3 +datum=WGS84 +units=m"
 
 j  <- jsonlite::fromJSON("output/chhattisgarh/cg_rivers.json", simplifyVector = FALSE)

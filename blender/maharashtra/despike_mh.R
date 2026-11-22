@@ -8,7 +8,7 @@
 # only cells beyond 200 m with the local median. 265 of 14.6M cells.
 suppressPackageStartupMessages({library(terra); library(sf)})
 sf::sf_use_s2(FALSE); terra::terraOptions(memfrac = 0.6)
-setwd("/Users/siddharthpetare/projects/themapsdaily-relief-maps")
+setwd(Sys.getenv("RELIEF_MAPS_ROOT", "."))
 f  <- "output/maharashtra/maharashtra_dem_z9_sea.tif"
 d  <- terra::rast(f)
 st <- terra::vect("output/maharashtra/maharashtra_boundary.gpkg")

@@ -1,10 +1,35 @@
-# relief-maps
+# Relief Maps
 
-Beautiful 3D shaded-relief maps of Indian states — the tilted extruded-slab look
-with hypsometric tint (**seafoam-teal lowlands → tan → brown ridges → cream peaks**,
-the "mappdout" studio palette), hillshaded mountains, ambient-occlusion depth, and
-river overlays. Rendered **top-down** with **rayshader** onto a **1080×1920 vertical
-grey studio canvas** (IG/story format) with a soft path-traced drop shadow.
+Turn any Indian state into a 3D shaded-relief map: tilted terrain, soft shadows, rivers and labelled cities and peaks, ready to post as a vertical story or slide. The maps are made in R with rayshader, and a Blender path gives a higher-quality 3D hero render.
+
+| Goa | Himachal Pradesh | Kerala |
+|---|---|---|
+| ![Goa](docs/gallery/goa.jpg) | ![Himachal Pradesh](docs/gallery/himachal-pradesh.jpg) | ![Kerala](docs/gallery/kerala.jpg) |
+
+## What you get
+
+- A 1080 by 1920 vertical image with a studio-grey backdrop and a baked-in drop shadow.
+- Colours that follow the height of the land: teal lowlands, then tan, brown ridges and cream peaks.
+- Rivers, cities, capitals and marquee peaks, with labels you control through simple CSV files.
+- A recipe for each state you can re-run: 14 states are already set up in `blender/` and the CSV folders.
+
+## Quick start
+
+1. Run `./setup.sh` once. It installs R, the map libraries (GDAL, GEOS, PROJ) and the R packages.
+2. Add your cities in `cities/<state>.csv`, or reuse one that exists.
+3. Render a state: `Rscript render_state.R "Uttarakhand" 9 40 256 90`
+
+The image lands in `output/`. A full render takes 8 to 10 minutes. The preview settings below give a rough look in about one minute.
+
+## Data and credits
+
+- Terrain: Copernicus DEM through the AWS Terrain Tiles service (via the `elevatr` package).
+- Rivers and lakes: OpenStreetMap contributors, available under the ODbL licence. Keep that credit if you publish a map.
+- Labels use the Inter font, which is open source (SIL Open Font Licence).
+- State outlines: our own cleaned outlines in `data/boundaries/`. They follow India's officially claimed border. The original source of the base polygons was not recorded, so check them before using them for anything official.
+- Code: MIT licence, see `LICENSE`.
+
+Made by [TheMapsDaily](https://themapsdaily.com). Everything below is the technical detail.
 
 ## Anatomy of the render
 
@@ -19,7 +44,6 @@ grey studio canvas** (IG/story format) with a soft path-traced drop shadow.
 ## Setup (one time)
 
 ```bash
-cd relief-maps
 ./setup.sh          # installs R, GDAL/GEOS/PROJ, and the R packages
 ```
 
@@ -114,12 +138,7 @@ for the high-detail single-state OSM polygons (Goa's coastline needs it).
 | `fonts/` | Inter 400/600/700 for label compositing |
 | `output/<slug>/` | all render products — git-ignored, archived to R2 |
 
-> **Caveat — `blender/<state>/` scripts hardcode an absolute repo root.** 23 of
-> them `setwd()` (or write `OUT=`) to
-> `/Users/siddharthpetare/projects/themapsdaily-relief-maps`. They were rewritten
-> when this repo split out of `themapsdaily-web`, so they work today, but they
-> will break again on any move or on another machine. Parameterise them if you
-> ever need to re-run one. Arunachal's are already relative — copy that pattern.
+> **Running the scripts in `blender/<state>/`:** each one finds the repository through the `RELIEF_MAPS_ROOT` environment variable and falls back to the folder you run it from. Set it once, for example `export RELIEF_MAPS_ROOT=$(pwd)`, and they work from any machine.
 
 ## Output hygiene
 
